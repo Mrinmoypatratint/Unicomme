@@ -2,18 +2,76 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <link rel="stylesheet" type="text/css" href="registration.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unicomme</title>
+    <title>Registration Form</title>
 </head>
 <body>
     <header>
         <h1 >UNICOMME</h1>
-        <h2>Syllabus</h2>
-        <p>If you want to know more about click here..</p>
-        <h2>Scholarship</h2>
-        <p>If you want to know more about click here..</p>
-        <h2>Placement Section</h2>
-        <p>If you want to know more about click here..</p>
+       
 </body>
+
+<body>
+
+    <h1>Registration</h1>
+
+    <form id="registration-form">
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="rollNo">Roll Number:</label>
+            <input type="text" id="rollNo" name="rollNo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="section">Section:</label>
+            <select id="section" name="section" required>
+                <option value="">Select Section</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+
+
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="Year">Year:</label>
+            <select id="Year" name="Year" required>
+                <option value="">Year</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+
+    </form>
+
+</body>
+
 </html>
