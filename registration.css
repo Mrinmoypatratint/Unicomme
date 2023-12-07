@@ -1,4 +1,4 @@
-/* Global styles */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -10,7 +10,6 @@ h1 {
     text-align: center;
 }
 
-/* Form */
 
 form {
     background: #eee;
@@ -20,7 +19,6 @@ form {
     border-radius: 10px;
 }
 
-/* Form group */
 
 .form-group {
     margin-bottom: 20px;
@@ -30,8 +28,6 @@ form {
     display: block;
     color: #666;
 }
-
-/* Inputs */
 
 input,
 select {
@@ -44,8 +40,6 @@ select {
 input[type="text"] {
     width: 100%;
 }
-
-/* Button */
 
 button {
     display: block;
