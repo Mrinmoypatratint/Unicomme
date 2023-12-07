@@ -3,6 +3,7 @@ h1 {
     text-align: center;  
     color:blue;
   }
-body{
-    background-color:yellow;
-}
+ body {
+        background-image: url('background_full.jpeg');
+        background-size: cover; 
+      }
