@@ -1,3 +1,4 @@
+//validate of the form to fill every bolck is filled
 // Get form element
 const registrationForm = document.getElementById('registration-form');
 
@@ -37,7 +38,7 @@ function validateForm() {
     // Return true if valid otherwise false
 }
 
-// API register function
+// API register function 
 async function registerUser(user) {
 
     const apiURL = '/register';
