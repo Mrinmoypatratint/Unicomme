@@ -25,3 +25,10 @@ body {
   border-radius: 10px;
   float: center;
 }
+/* Adding a red colour background on the site name */
+
+h1 {
+  border: 2px solid red;
+  background-color: #dcc3c3;
+  padding: 10px;  
+}
