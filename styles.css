@@ -1,12 +1,27 @@
 /* for h1  tag to put title in middle of website using html */
 h1 {
-    text-align: center;  
-    color:blue;
-    p {
-        font-size: 50px; 
-      }
-  }
+  text-align: center;
+  /* color: blue; */
 
-    body {
-        background-color: aqua;
-      }
+  p {
+    font-size: 20px;
+  }
+}
+
+body {
+  background-image: url("classroom.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+}
+
+.main {
+  
+
+  background: #eee;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  float: center;
+}
