@@ -15,6 +15,30 @@ body {
   background-size: cover;
 }
 
+.buttons {
+  position: absolute; 
+  top: 20px;
+  right: 20px;
+  display: flex;
+}
+
+.sign-in,
+.sign-up {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px; 
+  color: white;
+  margin-left: 10px; 
+}
+
+.sign-in {
+  background-color: #3e8e41;
+}
+
+.sign-up { 
+  background-color: #449955;
+}
+
 .main {
   
 
