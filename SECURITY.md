@@ -14,17 +14,6 @@ currently being supported with security updates.
 
 Here is a draft GitHub SECURITY.md file I created:
 
-# Security Policy
-
-## Supported Versions
-
-We release patches for security vulnerabilities. The following table lists versions of this project that are currently being supported with security updates:
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.x   | :white_check_mark: |
-| < 0.x   | :x:                |
-
 ## Reporting a Vulnerability
 
 If you discover a security vulnerability within this project, please send an email to mrinmoypatralrca@gmail.com and anuragofficial260@gmail.com
