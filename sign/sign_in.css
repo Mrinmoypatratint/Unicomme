@@ -1,0 +1,79 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Root styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, rgb(15, 77, 135));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Gradient animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+#signin {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input */
+input {
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(133, 94, 194, 0.5);
+    margin: 10px 0 20px;
+}
+
+/* Button */
+button {
+    padding: 12px;
+    color: white;
+    background: #16b416;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Links */
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: #0f1711;
+}
