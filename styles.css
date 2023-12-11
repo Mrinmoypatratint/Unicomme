@@ -9,7 +9,7 @@ h1 {
 }
 
 body {
-  background-image: url("background.jpg");
+  background-image: url("image/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -73,7 +73,7 @@ h1 {
 }
 
 .dropdown {
-  background-image: url("button.png");
+  background-image: url("image/button.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
