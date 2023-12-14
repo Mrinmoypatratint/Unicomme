@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="icon" type="image/x-icon" href="image/ICON.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container" id="navigation-bar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Unicomme</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="syllabus.html">Syllabus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="placement.html">Placement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="scholarship.html">Scholarship</a></li>
+                    <!-- <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#">Research</a></li>
+                            <li><a class="dropdown-item" href="#">Placement</a></li>
+                            <li><a class="dropdown-item" href="#">Scholarship</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul> -->
+
+                </ul>
+                <a href="sign/sign_in.html">
+                    <button class="btn btn-success" type="submit" id="signin">Sign In</button></li></a>
+                <a href="register/registration.html">
+                    <button class="btn btn-success" type="submit" id="signup">Sign Up</button></li></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+            <img src="image/EMBLEM.jpg" id="logo" alt="" srcset="">
+            <h1 class="text-body-emphasis">Unicomme: A Student Community</h1>
+            <p class="col-lg-8 mx-auto fs-5 text-muted">
+                Welcome to Unicomme, an innovative student platform bringing together bright young minds to collaborate,
+                learn, and grow. As you explore our site, you'll discover a supportive community centered around
+                empowering students to reach their full potential.
+            </p>
+            <div class="d-inline-flex gap-2 mb-5">
+                <button id="readme" class="d-inline-flex align-items-center btn btn-success btn-lg px-4 rounded-pill"
+                    data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button">
+                    Read More
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" id="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">WELCOME TO UNICOMME</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h3>The Next Generation Ecosystem for Student Growth and Unity</h3>
+                                <p>Welcome to Unicomme, an innovative student platform bringing together bright young
+                                    minds to collaborate, learn, and grow. As you explore our site, you'll discover a
+                                    supportive community centered around empowering students to reach their full
+                                    potential. Our vision is to build a next-generation ecosystem where students can
+                                    access the tools and connections to thrive academically while developing real-world
+                                    skills. That's why we've designed an engaging online hub facilitating meaningful
+                                    interactions between accomplished peers. Upon entering the site, you're greeted by
+                                    our sleek, modern interface displaying the Unicomme emblem, an abstract design
+                                    representing unity and progress. Prominently featured is our descriptive tagline -
+                                    "Unicomme is a leading platform..." allowing visiting students to immediately grasp
+                                    our purpose. The intuitive navigation allows visitors to easily access key sections
+                                    like the syllabus, research, placements, and scholarships. This menu reflects our
+                                    commitment to enabling academic success as well as career development. Within each
+                                    section, students can dig deeper into tailored services like exam preparations,
+                                    research publications, internships, and funding opportunities. Our eloquent About Us
+                                    section introduces the origins of Unicomme while capturing our vision for
+                                    advancement through collaboration. An image of interlocking hands reinforces how
+                                    shared knowledge propels individuals and communities forward. The Meet Our Team
+                                    section spotlights the brilliant students powering Unicomme and provides insight
+                                    into our diverse expertise. While our roles span technology, design, content
+                                    creation, and community management, we share a passion for innovating new solutions.
+                                    Our bios highlight notable accomplishments while the contact links allow students to
+                                    get directly in touch with questions or collaboration invitations. For registered
+                                    users, the site offers a vast range of member-exclusive services designed to support
+                                    students throughout their academic journey and beyond. The personalized dashboard
+                                    allows users to track assignments, set goals, join groups related to their
+                                    interests, and access mentoring. Our community forums facilitate discussions with
+                                    peers facing similar challenges, allowing members to problem solve and motivate one
+                                    another. For more direct support, students can use our scheduler to book 1-on-1
+                                    video sessions with tutors and editors. The Opportunities page lists scholarships,
+                                    competitions, internships and jobs vetted to match with member skills and
+                                    aspirations. Filtering by preferences makes finding the perfect next step easier.
+                                    Members receive customized recommendations via email as well as through the
+                                    suggestion engine on their dashboards. Overall Unicomme transcends a traditional
+                                    learning platform by understanding every student’s needs are unique. Our
+                                    ever-expanding community draws from a diversity of cultures, identities, experiences
+                                    and ambitions. We celebrate this richness while providing space for our members to
+                                    feel understood and supported. Our team of advisors includes distinguished
+                                    educators, innovators and students leveraging their expertise to continually enhance
+                                    our platform. Driven by our shared purpose, we empower students to transform
+                                    themselves and society by embracing collaboration. Ready to explore your
+                                    possibilities? <a href="register/registration.html"> Join us today.</a></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+              Secondary link
+            </button> -->
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container">
+        <div class="container row">
+            <div class="card col-md-3">
+                <img src="image/photo_mrinmoy.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mrinmoy Patra</h5>
+                    <h2 class="card-text">Developer</h2>
+                    <button class="btn btn-success buttons" data-bs-toggle="modal"
+                        data-bs-target="#contact1">Contact</button>
+                </div>
+            </div>
+            <div class="card col-md-3">
+                <img src="image/photo_Anurag.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Anurag Dey</h5>
+                    <h2 class="card-text">Developer</h2>
+                    <button class="btn btn-success buttons" data-bs-toggle="modal"
+                        data-bs-target="#contact2">Contact</button>
+                </div>
+            </div>
+            <div class="card col-md-3">
+                <img src="image/photo_himi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Halima Yasmin</h5>
+                    <h2 class="card-text">Developer</h2>
+                    <button class="btn btn-success buttons" data-bs-toggle="modal"
+                        data-bs-target="#contact3">Contact</button>
+                </div>
+            </div>
+            <div class="card col-md-3">
+                <img src="image/photo_sorbojit.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sorbojit Mondal</h5>
+                    <h2 class="card-text">Developer</h2>
+                    <button class="btn btn-success buttons" data-bs-toggle="modal"
+                        data-bs-target="#contact4">Contact</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal fade" id="contact1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="contact1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" id="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Mrinmoy Patra</h2>
+                    <p>
+                        Email: <span class="highlight">mrinmoypatralrca@gmail.com</span><br>
+                        Phone: <span class="highlight">555-123-4567</span>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contact2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="contact2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" id="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Anurag Dey</h2>
+                    <p>
+                        Email: <span class="highlight">anuragofficial260@gmail.com</span><br>
+                        Phone: <span class="highlight">555-987-6543</span>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="contact3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="contact3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" id="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact3</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Halima Yasmin</h2>
+                    <p>
+                        Email: <span class="highlight">halimayasmin6579@gmail.com</span><br>
+                        Phone: <span class="highlight">555-765-4321</span>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="contact4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="contact4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" id="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact4</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Sorbojit Mondal</h2>
+                    <p>
+                        Email: <span class="highlight">33sorbojitmondal@gmail.com</span><br>
+                        Phone: <span class="highlight">555-456-1289</span>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="below">
+        <h4>Copyright 2023 by Refsnes Data. All Rights Reserved. </h4>
+        </div>
+    </nav>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>
