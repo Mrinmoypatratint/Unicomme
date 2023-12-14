@@ -1,0 +1,53 @@
+#signin,
+#signup {
+    margin-left: 5px;
+    border: 0;
+    color: white;
+}
+
+
+#signin {
+    background-color: #E63946;
+}
+
+
+
+
+#navigation-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#logo {
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+
+#modal {
+    max-width: 80%;
+}
+
+
+#signup {
+    background-color: #1D3557;
+}
+
+#readme {
+    background-color: #1D3557;
+    color: white;
+}
+
+
+.buttons {
+    background-color: #1D3557;
+    color: white;
+}
+
+.below {
+    background-color: rgb(110, 187, 110);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
