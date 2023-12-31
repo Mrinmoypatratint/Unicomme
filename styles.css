@@ -44,6 +44,19 @@
     color: white;
 }
 
+.card-img-top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+}
+
+.border {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .below {
     background-color: rgb(110, 187, 110);
     color: white;
