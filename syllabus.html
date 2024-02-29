@@ -1,92 +1,143 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unicomme</title>
-    <link rel="icon" type="image/x-icon" href="image/ICON.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="syllabus.css">
-
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container" id="navigation-bar">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Unicomme</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="syllabus.html">Syllabus</a></li>
-                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="placement.html">Placement</a></li>
-                    <li class="nav-item"><a class="nav-link" href="scholarship.html">Scholarship</a></li>
-                    <!-- <ul class="dropdown-menu">
-
-                            <li><a class="dropdown-item" href="#">Syllabus</a></li>
-                            <li><a class="dropdown-item" href="#">Research</a></li>
-                            <li><a class="dropdown-item" href="#">Placement</a></li>
-                            <li><a class="dropdown-item" href="#">Scholarship</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul> -->
-
-                </ul>
-                <a href="sign/sign_in.html">
-                    <button class="btn btn-success" type="submit" id="signin">Sign In</button></li></a>
-                <a href="register/registration.html">
-                    <button class="btn btn-success" type="submit" id="signup">Sign Up</button></li></a>
-
-            </div>
-        </div>
-    </nav>
-
-    <!--<div class="fs-background-container">
-        <div class="fs-background-media fs-background-responsive fs-background-native" aria-hidden="true"
-            style="background-image: url(https://images.unsplash.com/photo-1708923698856-18594e286667?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); opacity: 1;">
-            <img alt="Students working in lab"
-                src="https://images.unsplash.com/photo-1708923698856-18594e286667?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-        </div>
-    </div>/-->
-
-    <div class="panel">
-        <form action="https://makautexam.net/aicte_details/Syllabus/CSE/sem320.pdf">
-            <button>BTECH CSE</button>
-        </form>
-
-        <form action="https://makautexam.net/aicte_details/Syllabus/CE/sem3.pdf">
-            <button>BTECH Civil</button>
-        </form>
-
-        <form action="https://makautexam.net/aicte_details/Syllabus/ME/sem3.pdf">
-            <button>BTECH ME</button>
-        </form>
-
-        <form action="https://makautexam.net/aicte_details/Syllabus/ECE/sem3.pdf">
-            <button>BTECH ECE</button>
-        </form>
-
-        <form action="https://makautexam.net/aicte_details/Syllabus/EE/sem3.pdf">
-            <button>BTECH EE</button>
-        </form>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
-
-
-
-
-</body>
-
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+<body> 
+    <form action="/server"> 
+        <select name="Stream" id="Stream" onchange="showYears()"> 
+            <option>Select your stream</option> 
+            <option value="CSE">BTECH CSE</option> 
+            <option value="CIVIL">BTECH CIVIL</option> 
+            <option value="ECE">BTECH ECE</option> 
+            <option value="EE">BTECH EE</option> 
+            <option value="ME">BTECH ME</option> 
+        </select> 
+        <div id="yearSelection" style="display:none;"> 
+            <select name="Year" id="Year" onchange="showSemesters()"> 
+                <option>Select Year</option> 
+            </select> 
+        </div> 
+        <div id="semesterSelection" style="display:none;"> 
+            <select name="Semester" id="Semester" onchange="showSyllabusLink()"> 
+                <option>Select Semester</option> 
+            </select> 
+            <a id="syllabusLink" href="#" target="_blank" style="display:none;">Syllabus</a> 
+        </div> 
+    </form> 
+ 
+    <script> 
+        var syllabusLinks = { 
+            "CSE": { 
+                "1st year": { 
+                    "1st semester": "https://makautexam.net/aicte_details/Syllabus/BTECH.pdf", 
+                    "2nd semester": "https://makautexam.net/aicte_details/Syllabus/BTECH.pdf" 
+                }, 
+                "2nd year": { 
+                    "3rd semester": "https://makautexam.net/aicte_details/Syllabus/CSE/sem320.pdf", 
+                    "4th semester": "https://makautexam.net/aicte_details/Syllabus/CSE/sem420.pdf" 
+                }, 
+                "3rd year": { 
+                    "5th semester": "https://makautexam.net/aicte_details/Syllabus/CSE/sem520.pdf", 
+                    "6th semester": "https://makautexam.net/aicte_details/Syllabus/CSE/sem620.pdf" 
+                }, 
+                "4th year": { 
+                    "7th semester": "https://makautexam.net/aicte_details/Syllabus/CSE/sem720.pdf", 
+                    "8th semester": "https://makautexam.net/aicte_details/Syllabus/CSE/sem820.pdf" 
+                } 
+            }, 
+            "CIVIL": { 
+                "1st year": { 
+                    "1st semester": "https://makautexam.net/aicte_details/Syllabus/BTECH.pdf", 
+                    "2nd semester": "https://makautexam.net/aicte_details/Syllabus/BTECH.pdf" 
+                }, 
+                "2nd year": { 
+                    "3rd semester": "https://makautexam.net/aicte_details/Syllabus/CE/sem3.pdf", 
+                    "4th semester": "https://makautexam.net/aicte_details/Syllabus/CE/sem4.pdf" 
+                }, 
+                "3rd year": { 
+                    "5th semester": "https://makautexam.net/aicte_details/Syllabus/CE/sem5.pdf", 
+                    "6th semester": "https://makautexam.net/aicte_details/Syllabus/CE/sem6.pdf" 
+                }, 
+                "4th year": { 
+                    "7th semester": "https://makautexam.net/aicte_details/Syllabus/CE/sem7.pdf", 
+                    "8th semester": "https://makautexam.net/aicte_details/Syllabus/CE/sem8.pdf" 
+                } 
+            }, 
+            // Add links for other streams similarly 
+        }; 
+ 
+        function showYears() { 
+            var streamSelect = document.getElementById("Stream"); 
+            var yearSelect = document.getElementById("Year"); 
+            var yearSelectionDiv = document.getElementById("yearSelection"); 
+            var semesterSelectionDiv = document.getElementById("semesterSelection"); 
+ 
+            // Clear previous options 
+            yearSelect.innerHTML = ''; 
+            semesterSelectionDiv.style.display = 'none'; 
+ 
+            // Check if a stream is selected 
+            if (streamSelect.value !== 'Select your stream') { 
+                // Show the year selection dropdown 
+                yearSelectionDiv.style.display = 'block'; 
+ 
+                // Add options based on selected stream 
+                var years = ["1st year", "2nd year", "3rd year", "4th year"]; 
+                for (var i = 0; i < years.length; i++) { 
+                    var option = document.createElement("option"); 
+                    option.text = years[i];
+                    yearSelect.add(option); 
+                } 
+            } else { 
+                // Hide the year selection dropdown if no stream is selected 
+                yearSelectionDiv.style.display = 'none'; 
+            } 
+        } 
+ 
+        function showSemesters() { 
+            var yearSelect = document.getElementById("Year"); 
+            var semesterSelect = document.getElementById("Semester"); 
+            var semesterSelectionDiv = document.getElementById("semesterSelection"); 
+ 
+            // Clear previous options 
+            semesterSelect.innerHTML = ''; 
+ 
+            // Check if a year is selected 
+            if (yearSelect.value !== 'Select Year') { 
+                // Show the semester selection dropdown 
+                semesterSelectionDiv.style.display = 'block'; 
+ 
+                // Add options based on selected year and stream 
+                var stream = document.getElementById("Stream").value; 
+                var year = yearSelect.value; 
+                var semesters = Object.keys(syllabusLinks[stream][year]); 
+ 
+                for (var i = 0; i < semesters.length; i++) { 
+                    var option = document.createElement("option"); 
+                    option.text = semesters[i]; 
+                    semesterSelect.add(option); 
+                } 
+            } else { 
+                // Hide the semester selection dropdown if no year is selected 
+                semesterSelectionDiv.style.display = 'none'; 
+            } 
+        } 
+ 
+        function showSyllabusLink() { 
+            var yearSelect = document.getElementById("Year"); 
+            var semesterSelect = document.getElementById("Semester"); 
+            var syllabusLink = document.getElementById("syllabusLink"); 
+ 
+            var stream = document.getElementById("Stream").value; 
+            var year = yearSelect.value; 
+            var semester = semesterSelect.value; 
+ 
+            syllabusLink.href = syllabusLinks[stream][year][semester]; 
+            syllabusLink.style.display = 'block'; 
+        } 
+    </script> 
+</body> 
 </html>
