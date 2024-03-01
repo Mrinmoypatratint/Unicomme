@@ -1,7 +1,13 @@
-.panel{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 30px;
-}
+body {
+    display: flex;
+    flex-direction: column;  
+    height: 100vh;
+  }
+  
+  main {
+    flex: 1; 
+  }
+  
+  footer {
+    margin-top: auto;
+  }
