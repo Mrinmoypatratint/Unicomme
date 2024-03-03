@@ -76,7 +76,7 @@
                     </div>
                     <div class="form-group">
                         <label for="yearSelect">Year:</label>
-                        <select class="form-control" id="yearSelect">
+                        <select class="form-control" id="yearSelect" onchange="updateSemesterList()">
                             <option value="1st year">1st Year</option>
                             <option value="2nd year">2nd Year</option>
                             <option value="3rd year">3rd Year</option>
@@ -148,7 +148,7 @@
                 var year = document.getElementById("yearSelect").value;
                 var semester = document.getElementById("semesterSelect").value;
                 var link = syllabusLinks[stream][year][semester];
-                var buttonHTML = "<button class='btn btn-primary'><a href='" + link + "' target='_blank'>Syllabus Link</a></button>";
+                var buttonHTML = "<button  class='btn btn-light'><a href='" + link + "' target='_blank'>Syllabus Link</a></button>";
                 document.getElementById("syllabusLink").innerHTML = buttonHTML;
             }
         </script>
@@ -272,6 +272,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function updateSemesterList() {
+          var selectedYear = document.getElementById("yearSelect").value;
+          var semesterList = document.getElementById("semesterSelect");
+      
+          // Clear existing options in the semester list
+          semesterList.innerHTML = "";
+      
+          // Add semester options based on the selected year
+          if (selectedYear === "1st year") {
+            addOption(semesterList, "1st semester", "1st semester");
+            addOption(semesterList, "2nd semester", "2nd semester");
+          } else if (selectedYear === "2nd year") {
+            addOption(semesterList, "3rd semester", "3rd semester");
+            addOption(semesterList, "4th semester", "4th semester");
+          }
+          else if (selectedYear === "3rd year") {
+            addOption(semesterList, "5th semester", "5th semester");
+            addOption(semesterList, "6th semester", "6th semester");
+          }
+          else if (selectedYear === "4th year") {
+            addOption(semesterList, "7th semester", "7th semester");
+            addOption(semesterList, "8th semester", "8th semester");
+          }
+        }
+      
+        function addOption(selectElement, value, text) {
+          var option = document.createElement("option");
+          option.value = value;
+          option.text = text;
+          selectElement.add(option);
+        }
+      
+        // Initial update of the semester list based on the default selected year
+        updateSemesterList();
+      </script>
 </body>
 
 </html>
